@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин снаряжения для охоты и экстрима</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка сайта с навигацией -->
+    <header class="header">
+        <div class="logo">SHOP</div>
+        
+        <div class="nav-container">
+            <div class="hamburger" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="#" data-section="home">Home</a></li>
+                <li><a href="#services" data-section="services">Service</a></li>
+                <li><a href="#about" data-section="about">About</a></li>
+                <li><a href="#contact" data-section="contact">Contact</a></li>
+            </ul>
+            
+            <div class="language-dropdown">
+                <button class="language-btn">RU</button>
+                <div class="language-content">
+                    <a href="#" data-lang="ru">Русский</a>
+                    <a href="#" data-lang="en">English</a>
+                    <a href="#" data-lang="ka">ქართული</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Секция с героическим изображением и текстом -->
+        <section class="hero-section" id="home">
+            <div class="hero-content">
+                <h1 class="hero-title">ЭКИПИРОВКА ДЛЯ НАСТОЯЩИХ ПРИКЛЮЧЕНИЙ</h1>
+                <p class="hero-text">Профессиональное снаряжение для охоты, экстремального туризма и выживания в самых суровых условиях природы</p>
+                <a href="#about" class="hero-button">About me</a>
+            </div>
+        </section>
+<hr>
+        <!-- Секция услуг с тремя товарами -->
+        <section class="services-section" id="services">
+            <div class="section-container">
+                <h2 class="section-title" data-aos="fade-up">Наши товары</h2>
+                
+                <div class="products-container">
+                    <!-- Товар 1: Палатки -->
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="product-image">
+                            <img src="/api/placeholder/400/300" alt="Палатки для экстремальных условий">
+                        </div>
+                        <h3 class="product-title">Палатки</h3>
+                        <p class="product-price">от 15,000 ₽</p>
+                        <button class="product-details-btn">Подробнее</button>
+                        
+                        <div class="product-modal">
+                            <div class="modal-content">
+                                <span class="close-modal">&times;</span>
+                                <div class="modal-image">
+                                    <img src="/api/placeholder/600/400" alt="Палатки для экстремальных условий">
+                                </div>
+                                <h3>Палатки для экстремальных условий</h3>
+                                <p class="modal-description">Наши палатки разработаны для самых суровых условий. Они выдерживают сильный ветер, дождь и снег, сохраняя тепло и сухость внутри. Изготовлены из высокопрочных материалов с водонепроницаемостью 10000 мм водяного столба.</p>
+                                <div class="modal-specs">
+                                    <p><strong>В комплекте:</strong> Палатка, колышки, растяжки, ремонтный набор</p>
+                                    <p><strong>Особенности:</strong> Двухслойная конструкция, усиленный каркас, все швы проклеены</p>
+                                    <p class="modal-price"><strong>Цена:</strong> от 15,000 ₽</p>
+                                </div>
+                                <button class="buy-button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Товар 2: Экипировка -->
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="product-image">
+                            <img src="/api/placeholder/400/300" alt="Экипировка для выживания">
+                        </div>
+                        <h3 class="product-title">Экипировка</h3>
+                        <p class="product-price">от 8,500 ₽</p>
+                        <button class="product-details-btn">Подробнее</button>
+                        
+                        <div class="product-modal">
+                            <div class="modal-content">
+                                <span class="close-modal">&times;</span>
+                                <div class="modal-image">
+                                    <img src="/api/placeholder/600/400" alt="Экипировка для выживания">
+                                </div>
+                                <h3>Экипировка для выживания</h3>
+                                <p class="modal-description">Профессиональная экипировка, разработанная для экстремальных условий. Наша одежда обеспечивает защиту от холода, влаги и ветра, сохраняя комфортную температуру тела в любых погодных условиях.</p>
+                                <div class="modal-specs">
+                                    <p><strong>Материалы:</strong> Мембранные ткани, влагоотводящие подкладки, усиленные швы</p>
+                                    <p><strong>Особенности:</strong> Многослойность, вентиляционные клапаны, защита от УФ-излучения</p>
+                                    <p class="modal-price"><strong>Цена:</strong> от 8,500 ₽</p>
+                                </div>
+                                <button class="buy-button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Товар 3: Снаряжение -->
+                    <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="product-image">
+                            <img src="/api/placeholder/400/300" alt="Снаряжение для выживания">
+                        </div>
+                        <h3 class="product-title">Снаряжение</h3>
+                        <p class="product-price">от 5,000 ₽</p>
+                        <button class="product-details-btn">Подробнее</button>
+                        
+                        <div class="product-modal">
+                            <div class="modal-content">
+                                <span class="close-modal">&times;</span>
+                                <div class="modal-image">
+                                    <img src="/api/placeholder/600/400" alt="Снаряжение для выживания">
+                                </div>
+                                <h3>Снаряжение для выживания</h3>
+                                <p class="modal-description">Специализированное снаряжение для охоты и выживания в дикой природе. Включает все необходимые инструменты и приспособления для обеспечения безопасности и комфорта в экстремальных условиях.</p>
+                                <div class="modal-specs">
+                                    <p><strong>В ассортименте:</strong> Ножи, фонари, компасы, средства розжига огня, аптечки первой помощи</p>
+                                    <p><strong>Особенности:</strong> Надежность, долговечность, компактность</p>
+                                    <p class="modal-price"><strong>Цена:</strong> от 5,000 ₽</p>
+                                </div>
+                                <button class="buy-button">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция "О нас" -->
+        <section class="about-section" id="about">
+            <div class="section-container">
+                <div class="about-content" data-aos="fade-up">
+                    <h2 class="section-title">О нас</h2>
+                    <div class="about-text">
+                        <p>Мы специализируемся на поставке высококачественного снаряжения для экстремального туризма, охоты и выживания в дикой природе более 10 лет. Наша компания сотрудничает с ведущими производителями со всего мира, чтобы предложить вам только лучшее оборудование.</p>
+                        <p>Наша миссия — обеспечить безопасность и комфорт всех любителей активного отдыха и профессионалов, работающих в экстремальных условиях. Мы тщательно тестируем каждый товар перед тем, как включить его в наш ассортимент.</p>
+                        <p>Наши клиенты — это охотники, рыболовы, туристы, спасатели и все, кто ценит качество и надежность снаряжения, от которого может зависеть жизнь.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция контактов -->
+        <section class="contact-section" id="contact">
+            <div class="section-container">
+                <h2 class="section-title" data-aos="fade-up">Связаться с нами</h2>
+                <div class="contact-content" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Москва, ул. Лесная, 15</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+7 (999) 123-45-67</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>info@example.com</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Магазин снаряжения для охоты и экстрима. Все права защищены.</p>
+        </div>
+    </footer>
+    
+    <div class="overlay"></div>
+    
+    <script src="/script.js"></script>
+</body>
+</html>
